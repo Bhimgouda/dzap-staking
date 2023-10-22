@@ -1,0 +1,8 @@
+{
+  "80001": {
+    "name": "Polygon",
+    "logoUrl": "polygon.svg",
+    "currency": "WMatic",
+    "currencyLogoUrl": "matic.svg"
+  }
+}
