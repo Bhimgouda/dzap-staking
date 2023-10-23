@@ -1,5 +1,5 @@
 export async function retryOperation(operation, ...args) {
-  let maxRetries = 5;
+  let maxRetries = 2;
 
   for (let retryCount = 0; retryCount < maxRetries; retryCount++) {
     try {

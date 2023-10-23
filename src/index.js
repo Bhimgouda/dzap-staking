@@ -10,7 +10,7 @@ import { publicProvider } from "wagmi/providers/public";
 
 const { publicClient, webSocketPublicClient } = configureChains(
   [polygonMumbai],
-  [publicProvider()]
+  [infuraProvider({ apiKey: "6eaf019193db4d7e93f04c174c0a1e83" })]
 );
 
 const config = createConfig({

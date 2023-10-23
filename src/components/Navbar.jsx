@@ -35,8 +35,8 @@ const Navbar = () => {
           <button onClick={handleModalToggle} className="btn btn--grey" role="button">
             {supported ? (
               <div className="d-flex justify-content-between align-items-center">
-                <img className="icon mx-2" src={`images/${supported.logoUrl}`} alt="" />
-                <span>{supported.name}</span>
+                <img className="icon mx-2" src={`images/${supported?.logoUrl}`} alt="" />
+                <span>{supported?.name}</span>
               </div>
             ) : (
               "Switch to Supported Chain"

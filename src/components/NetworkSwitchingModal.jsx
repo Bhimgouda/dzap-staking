@@ -14,8 +14,6 @@ const NetworkSwitchingModal = ({ handleModalClose, modalOpen }) => {
     }
   };
 
-  // Needs to add network
-
   const modalBody = () => {
     return (
       <div className="chain-popup__form">
@@ -31,7 +29,7 @@ const NetworkSwitchingModal = ({ handleModalClose, modalOpen }) => {
                 alt={supportedChains[chainId].name}
                 className="chain-icon"
               />
-              <div className="SwitchNetworkItem_name__2pWLA">{supportedChains[chainId].name}</div>
+              <div className="">{supportedChains[chainId].name}</div>
             </div>
           );
         })}

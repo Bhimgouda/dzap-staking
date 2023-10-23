@@ -9,7 +9,8 @@ function App() {
       <Navbar />
       <Toaster />
       <Routes>
-        <Route path="/" element={<Staking />} />
+        <Route path="/:tokenAddress" element={<Staking />} />
+        <Route path="*" element={<Staking />} />
       </Routes>
     </div>
   );

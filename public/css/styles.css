@@ -84,6 +84,10 @@ input {
   color: var(--color-primary);
 }
 
+.text-red {
+  color: red;
+}
+
 .text-bold {
   font-family: var(--font-Satoshi-Black);
 }
@@ -158,15 +162,11 @@ input {
   border-bottom: 1px solid var(--color-grey-dark);
 }
 
-.chain-popup {
-  background: var(--color-grey-dark);
-}
-
 .modal-header {
   border-bottom: 1px solid #2a2c2e;
 }
 
-.chain-popup .modal-content {
+.modal-content {
   background: #171819;
 }
 
