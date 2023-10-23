@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("/fonts/Satoshi-Medium.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2"),
+    url("/fonts/Satoshi-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #6c2cdc;
+  --color-primary-dark: #340585;
+  --color-grey: #303236;
+  --color-grey-light: #7b7d82;
+  --color-grey-dark: #191b1f;
+
+  --font-Satoshi-Black: "Satoshi-Black", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-satoshi-regular: "Satoshi-Medium", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #000;
+  font-family: var(--font-satoshi-regular);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+select {
+  font-family: var(--font-satoshi-regular);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  background: var(--color-primary);
+  outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  -moz-appearance: textfield;
+}
+
+/* Utils */
+
+.text-grey {
+  color: var(--color-grey-light);
+}
+
+.text-purple {
+  color: var(--color-primary);
+}
+
+.text-red {
+  color: red;
+}
+
+.text-bold {
+  font-family: var(--font-Satoshi-Black);
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.btn {
+  min-height: 44px;
+  border-radius: 10px !important;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-satoshi-regular);
+}
+
+.btn--purple {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn--purple:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.btn--grey {
+  background: #303236;
+  color: #fff;
+}
+
+.btn--grey:hover {
+  background: #000;
+  color: #fff;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.logo {
+  width: 50px;
+}
+
+.icon {
+  width: 21px;
+}
+
+.icon--big {
+  width: 71px;
+}
+
+.topSticky {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar {
+  background: #000;
+  border-bottom: 1px solid var(--color-grey-dark);
+}
+
+.modal-header {
+  border-bottom: 1px solid #2a2c2e;
+}
+
+.modal-content {
+  background: #171819;
+}
+
+.chain-popup__form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.chain-popup__item {
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--red-button-bg-color);
+  color: #ba2aa2;
+  padding: 20px 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.25s linear;
+  background: #00000029;
+}
+
+.chain-popup__item .chain-icon {
+  width: 42px;
+}
+
+.chain-popup__item:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #da37d5, #ffd77b);
+}
+
+.container {
+  margin: 20px auto;
+  width: 900px;
+}
+
+.display {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--color-grey-dark);
+  padding: 10px 25px;
+}
+
+.card-container {
+  column-gap: 15px;
+  margin: 15px 0 0;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  height: 500px;
+  background: var(--color-grey-dark);
+  padding: 20px 40px;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  width: 250px;
+}
+
+.staking-input {
+  width: 250px;
+  margin: auto;
+  background: inherit;
+  border: 1px solid var(--color-grey-light);
+  border-radius: 5px;
+}
+
+.staking-input input {
+  background: inherit;
+  border: none;
+  color: #fff !important;
+  text-align: right;
+}
+
+.staking-input input:focus {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90vw;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .display {
+    flex-direction: column;
+    height: ;
+  }
+}
